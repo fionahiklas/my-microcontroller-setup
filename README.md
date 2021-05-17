@@ -82,6 +82,35 @@ Pico and run the simple code to switch the LED on/off
 >>> led.value(1)
 ```
 
+## Notes
+
+### VLAN Setup on Raspberry Pi
+
+Since the Raspberry Pi I have needs to be accessible from two separate subnets (one on a VLAN) I 
+needed to add some config.
+
+First install the `vlan` package
+
+```
+apt install vlan
+```
+
+Created the `/etc/network/interfaces.d/vlan7` file with this contents
+
+```
+iface vlan7 inet static
+  vlan-raw-device eth0
+  address 192.168.127.21
+  netmask 255.255.255.0
+  gateway 192.168.127.4
+
+auto vlan7
+```
+
+The main `eth0` interface is on `192.168.123.21`
+
+Changed SSH config to only accept keys and added the key from the machine I want to connect from
+
 
 
 ## Reference
