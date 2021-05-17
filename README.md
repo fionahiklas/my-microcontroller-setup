@@ -102,8 +102,7 @@ iface vlan7 inet static
   vlan-raw-device eth0
   address 192.168.127.21
   netmask 255.255.255.0
-  gateway 192.168.127.4
-
+  
 auto vlan7
 ```
 
