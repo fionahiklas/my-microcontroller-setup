@@ -185,4 +185,6 @@ Changed SSH config to only accept keys and added the key from the machine I want
 * [Some suggested tools](https://linuxhint.com/best_circuit_design_tools/)
 * [Xschem](https://xschem.sourceforge.io/stefan/index.html)
 * [Fritzing](https://fritzing.org/download/)
+* [AdaFruit Fritzing Library](https://github.com/adafruit/Fritzing-Library)
+* [ESP8266 Fritzing Parts](https://github.com/squix78/esp8266-fritzing-parts)
 
