@@ -82,10 +82,6 @@ Pico and run the simple code to switch the LED on/off
 >>> led.value(1)
 ```
 
-Wasn't able to get the MicroPython SSD1306 library installed with Thonny though
-trying with rshell
-
-
 
 
 ## MacOS
@@ -134,6 +130,8 @@ This is now the rshell prompt, you can start the REPL by typing `repl` you can n
 
 Pressing `CTRL-X` will drop back to the `rshell` shell.
 
+See [Pico Tests](pico/tests.md) for details of test code to run on the Pico to make sure the local setup is working
+
 
 
 ## Notes
@@ -179,6 +177,8 @@ Changed SSH config to only accept keys and added the key from the machine I want
 * [Getting started with MicroPython](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython)
 * [Getting started with C/C++ development](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf)
 * [MicroPython using rshell](https://www.twilio.com/blog/programming-raspberry-pi-pico-microcontroller-micropython)
+* [Fritzing Pico Part](https://datasheets.raspberrypi.org/pico/Pico-R3-Fritzing.fzpz)
+
 
 ### Schematic Capture
 
