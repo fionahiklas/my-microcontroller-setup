@@ -82,6 +82,24 @@ Pico and run the simple code to switch the LED on/off
 >>> led.value(1)
 ```
 
+Wasn't able to get the MicroPython SSD1306 library installed with Thonny though
+trying with rshell
+
+
+
+
+## MacOS
+
+### General
+
+
+### Arduino
+
+
+### Raspberry Pico
+
+
+
 ## Notes
 
 ### VLAN Setup on Raspberry Pi
@@ -98,12 +116,12 @@ apt install vlan
 Created the `/etc/network/interfaces.d/vlan7` file with this contents
 
 ```
-iface vlan7 inet static
+iface vlan27 inet static
   vlan-raw-device eth0
-  address 192.168.127.21
+  address 192.168.227.21
   netmask 255.255.255.0
   
-auto vlan7
+auto vlan27
 ```
 
 The main `eth0` interface is on `192.168.123.21`
