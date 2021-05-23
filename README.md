@@ -93,10 +93,46 @@ trying with rshell
 ### General
 
 
+
 ### Arduino
 
+Download the Arduino IDE from [here](https://www.arduino.cc/en/software)
 
-### Raspberry Pico
+
+### Raspberry Pi Pico
+
+Setting up rshell using a virtual environment
+
+```
+python3 -mvenv .matrix
+source .matrix/bin/activate
+pip install rshell
+```
+
+Assuming you followed the [getting started with MicroPython](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython) steps you should be able to plug the Pico via USB into the Mac and it will be accessible from a serial port using the following command
+
+```
+rshell -p /dev/tty.usbmodem0000000000001 --buffer-size 512
+```
+
+This will give output like this
+
+```
+Connecting to /dev/tty.usbmodem0000000000001 (buffer-size 512)...
+Trying to connect to REPL  connected
+Retrieving sysname ... rp2
+Testing if ubinascii.unhexlify exists ... Y
+Retrieving root directories ... /ssd1306.py/
+Setting time ... May 23, 2021 14:04:53
+Evaluating board_name ... pyboard
+Retrieving time epoch ... Jan 01, 1970
+Welcome to rshell. Use Control-D (or the exit command) to exit rshell.
+/Users/sheila/wd/my-microcontroller-setup>
+```
+
+This is now the rshell prompt, you can start the REPL by typing `repl` you can now interact with the Python interpreter.
+
+Pressing `CTRL-X` will drop back to the `rshell` shell.
 
 
 
@@ -135,14 +171,14 @@ Changed SSH config to only accept keys and added the key from the machine I want
 ### Arduino
  
 * [Nano pinout](https://www.makerguides.com/arduino-nano/)
-
+* [Download IDE](https://www.arduino.cc/en/software)
 
 ### Raspberry Pico
 
 * [Getting started](https://www.raspberrypi.org/documentation/rp2040/getting-started/)
 * [Getting started with MicroPython](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython)
 * [Getting started with C/C++ development](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf)
-
+* [MicroPython using rshell](https://www.twilio.com/blog/programming-raspberry-pi-pico-microcontroller-micropython)
 
 ### Schematic Capture
 
